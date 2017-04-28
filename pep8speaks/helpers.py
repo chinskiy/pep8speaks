@@ -95,7 +95,7 @@ def get_config(data):
                 "footer": ""
             }
         },
-        "scanner": {"diff_only": False},
+        "scanner": {"diff_only": True},
         "pycodestyle": {
             "ignore": [],
             "max-line-length": 79,
