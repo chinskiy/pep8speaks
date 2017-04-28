@@ -97,7 +97,7 @@ def get_config(data):
         },
         "scanner": {"diff_only": True},
         "pycodestyle": {
-            "ignore": [],
+            "ignore": ["E501", ],
             "max-line-length": 79,
             "count": False,
             "first": False,
