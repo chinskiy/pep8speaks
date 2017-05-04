@@ -265,6 +265,7 @@ def prepare_comment(request, data, config):
                 ## Link line numbers in the file
                 line, col = error_string_list[1][:-1].split(":")
                 line_url = data[file + "_link"] + "#L" + line
+                print(line, col, line_url)
                 error_string_list[1] = "[{0}:{1}]({2}):".format(line, col, line_url)
                 error_string = " ".join(error_string_list)
                 error_string = error_string.replace("Line [", "[Line ")
