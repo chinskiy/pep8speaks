@@ -240,6 +240,8 @@ def prepare_comment(request, data, config):
     ERROR = False  # Set to True when any pep8 error exists
     comment_body = []
     for file, issues in data["results"].items():
+        print(file)
+        print(issues)
         if len(issues) == 0:
             if not config["only_mention_files_with_errors"]:
                 comment_body.append(
